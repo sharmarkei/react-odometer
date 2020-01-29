@@ -1,14 +1,22 @@
 import React from "react";
 
 class Header extends React.Component {
-  render() {
-    return (
-        <div>
-            <h1>Header</h1>
-            <h2>{this.user.name}</h2>
-        </div>
-    )
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            greeting: 'WAH GWAM!',
+          };
+    }
+
+    render() {
+        return (
+            <>
+            <h1>{this.state.greeting}</h1>
+            <h2>oDoMeTeR</h2>
+           
+           </>
+        )
+    }
 }
 
 export default Header;
