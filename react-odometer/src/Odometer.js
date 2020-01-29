@@ -29,8 +29,8 @@ class Odometer extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h2>Odometer</h2>
-        <p>distance: {this.pad(this.state.distance)}</p>
+        <h2>OdMeTeR</h2>
+        <div>distance: {this.pad(this.state.distance)}</div>
         <div>
         <button onClick={this.handleClicks.bind(this, 1)}> Add 1 </button>
         <button onClick={this.handleClicks.bind(this, - 1)}> Sub 1 </button>
